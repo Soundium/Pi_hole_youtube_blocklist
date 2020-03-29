@@ -51,7 +51,7 @@ You can add it manually depending upon the service you use.
 cd /opt/
 sudo git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
 ```
-Make the script to run the script at 1AM on the last day of the week
+Add scripts to crontab to run at 1 AM and 5 AM on the last day of the week.
 
 `sudo nano /etc/crontab`
 
