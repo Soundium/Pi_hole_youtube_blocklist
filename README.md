@@ -55,7 +55,7 @@ Make the script to run the script at 1AM on the last day of the week
 
 `sudo nano /etc/crontab`
 
-Add this line at the end of the file:       
+Add those lines at the end of the file:       
 `0 1 * * */7     root    /opt/Pi_hole_youtube_blocklist/scripts/temp.sh`
 
 `0 5 * * */7     root    /opt/Pi_hole_youtube_blocklist/scripts/youtube-ads.sh`
