@@ -49,20 +49,21 @@ You can add it manually depending upon the service you use.
 ***For Automated Update***
 ```
 cd /opt/
-sudo git clone https://github.com/Soundium/Pi_hole_Whitelist.git
+sudo git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
 ```
 Make the script to run the script at 1AM on the last day of the week
 
 `sudo nano /etc/crontab`
 
 Add this line at the end of the file:       
-`0 1 * * */7     root    /opt/Pi_hole_Whitelist/scripts/whitelist.sh`
+`0 1 * * */7     root    /opt/Pi_hole_youtube_blocklist/scripts/temp.sh`
+`0 5 * * */7     root    /opt/Pi_hole_youtube_blocklist/scripts/youtube-ads.sh`
 
 CTRL + X then Y and Enter
 
 ```
-sudo Pi_hole_Whitelist/scripts/whitelist.sh
-sudo ./whitelist.sh
+sudo Pi_hole_youtube_blocklist/scripts/temp.sh
+sudo Pi_hole_youtube_blocklist/scripts/youtube-ads.sh
 ```
    
 ***     
