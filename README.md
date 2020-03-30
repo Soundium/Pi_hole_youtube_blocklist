@@ -18,6 +18,10 @@ cd Pi_hole_youtube_blocklist/scripts
 ```
 sudo nano /opt/Pi_hole_youtube_blocklist/scripts/temp.sh
 ```
+```
+# Wolfram Alfa APPID
+APPID="Register on https://www.wolframalpha.com/ and put your APPID here"
+```
 CTRL + X then Y and Enter
 
 4. Give the rights.
