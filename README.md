@@ -10,33 +10,21 @@ Want to report any issue? Feel free to file an <a href="https://github.com/Sound
 1. Register on <a href="https://www.wolframalpha.com/">Wolframalpha</a> and get your APPID. 
 2. Download scripts.
 ```
+cd /opt/
 git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
 cd Pi_hole_youtube_blocklist/scripts
 ```
-3. Add your APPID in temp.sh
+3. Add your APPID to temp.sh. 
 ```
-sudo nano /etc/pihole/temp.sh
+sudo nano /opt/Pi_hole_youtube_blocklist/scripts/temp.sh
 ```
 CTRL + X then Y and Enter
 
-4. Prepare 
-            
+4. Give the rights.
 ```
-git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
-cd Pi_hole_youtube_blocklist/scripts
-sudo ./whitelist.sh
+sudo chmod +x /etc/pihole/temp.sh
 ```
-**Note: You don't have to clone the repo every time you need to update whitelist file. Navigate to `Pi_hole_Whitelist/scripts` and run it again `sudo ./whitelist.sh`**
-        
-***For optional-list.txt***     
-You can add it manually depending upon the service you use. 
-
-***For Automated Update***
-```
-cd /opt/
-sudo git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
-```
-Add scripts to crontab to run at 1 AM and 5 AM on the last day of the week.
+5. Add scripts to crontab to run at 1 AM and 5 AM on the last day of the week.
 
 `sudo nano /etc/crontab`
 
@@ -47,10 +35,12 @@ Add those lines at the end of the file:
 
 CTRL + X then Y and Enter
 
+6. First run
 ```
 sudo Pi_hole_youtube_blocklist/scripts/temp.sh
 sudo Pi_hole_youtube_blocklist/scripts/youtube-ads.sh
 ```
+7. Add http://localhost/youtube.txt as blacklist from local to Pi-hole setup.
    
 ***     
    
