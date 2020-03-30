@@ -47,6 +47,9 @@ sudo Pi_hole_youtube_blocklist/scripts/youtube-ads.sh
 7. Add http://localhost/youtube.txt as blacklist from local to Pi-hole setup.
    
 ***     
+
+### Donation
+All donations are welcome and will help me to maintain this project. Please use "**Sponsor**" button on the top of this page.
    
 ### License
 ```
