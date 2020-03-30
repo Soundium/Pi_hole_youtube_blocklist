@@ -50,7 +50,8 @@ sudo Pi_hole_youtube_blocklist/scripts/youtube-ads.sh
 
 ### Donation
 All donations are welcome and will help me to maintain this project. Please use "**Sponsor**" button on the top of this page.
-   
+
+***
 ### License
 ```
 MIT License
