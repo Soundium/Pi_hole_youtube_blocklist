@@ -7,7 +7,7 @@ Want to report any issue? Feel free to file an <a href="https://github.com/Sound
            
 ### Installation and Usage
 
-1. Register on <a href="https://www.wolframalpha.com/">Wolframalpha</a> and get your APPID. 
+1. Register on <a href="https://www.wolframalpha.com/">Wolfram Alpha</a> and get your APPID. 
 2. Download scripts.
 ```
 cd /opt/
