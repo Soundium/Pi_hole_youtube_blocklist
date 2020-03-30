@@ -28,7 +28,7 @@ CTRL + X then Y and Enter
 ```
 sudo chmod +x /etc/pihole/temp.sh
 ```
-5. Add scripts to crontab to run at 1 AM and 5 AM on every day.
+5. Add scripts to crontab to run at 1 AM and 5 AM every day.
 
 `sudo nano /etc/crontab`
 
