@@ -1,7 +1,7 @@
                
 ## Tool for preparation a blacklist for Pi-Hole to block Youtube advertising. 
           
-Tool collect all googlevideo.com domains and add it to Pi-hole steup. Add these domains to your Pi-Hole setup by running a script or manually and make your setup **trouble-free!**
+The tool collects all googlevideo.com domains and adds them to Pi-hole setup. Add these domains to your Pi-Hole setup by running a script and make your setup **trouble-free!**
                 
 Want to report any issue? Feel free to file an <a href="https://github.com/Soundium/Pi_hole_youtube_blocklist/issues">issue</a>.
            
