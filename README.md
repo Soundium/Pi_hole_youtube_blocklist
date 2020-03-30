@@ -6,6 +6,8 @@ Tool collect all googlevideo.com domains and add it to Pi-hole steup. Add these 
 Want to report any issue? Feel free to file an <a href="https://github.com/Soundium/Pi_hole_youtube_blocklist/issues">issue</a>.
            
 ### Installation and Usage
+
+Register on <a href="https://www.wolframalpha.com/">Wolframalpha</a>.
             
 ```
 git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
