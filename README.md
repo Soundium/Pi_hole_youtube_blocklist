@@ -27,6 +27,7 @@ CTRL + X then Y and Enter
 4. Give the rights.
 ```
 sudo chmod +x /opt/Pi_hole_youtube_blocklist/scripts/temp.sh
+sudo chmod +x /opt/Pi_hole_youtube_blocklist/scripts/youtube-ads.sh
 ```
 5. Add scripts to crontab to run at 1 AM and 5 AM every day.
 
