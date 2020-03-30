@@ -28,14 +28,14 @@ CTRL + X then Y and Enter
 ```
 sudo chmod +x /etc/pihole/temp.sh
 ```
-5. Add scripts to crontab to run at 1 AM and 5 AM on the last day of the week.
+5. Add scripts to crontab to run at 1 AM and 5 AM on every day.
 
 `sudo nano /etc/crontab`
 
 Add those lines at the end of the file:       
-`0 1 * * */7     root    /opt/Pi_hole_youtube_blocklist/scripts/temp.sh`
+`0 1 * * *      root    /opt/Pi_hole_youtube_blocklist/scripts/temp.sh`
 
-`0 5 * * */7     root    /opt/Pi_hole_youtube_blocklist/scripts/youtube-ads.sh`
+`0 5 * * *      root    /opt/Pi_hole_youtube_blocklist/scripts/youtube-ads.sh`
 
 CTRL + X then Y and Enter
 
