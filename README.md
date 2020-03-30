@@ -26,7 +26,7 @@ CTRL + X then Y and Enter
 
 4. Give the rights.
 ```
-sudo chmod +x /etc/pihole/temp.sh
+sudo chmod +x /opt/Pi_hole_youtube_blocklist/scripts/temp.sh
 ```
 5. Add scripts to crontab to run at 1 AM and 5 AM every day.
 
