@@ -1,44 +1,15 @@
                
-## Commonly white listed domains for Pi-Hole (Compatible with Pi-Hole Docker Image).  
+## Tool for preparation a blacklist for Pi-Hole to block Youtube advertising. 
           
-A robust collection of commonly whitelisted websites borrowed from various sources including Pi-Hole subreddit, Pi-Hole forum, Pi-Hole GitHub repository and more! 
-Add these domains to your Pi-Hole setup by running a script or manually and make your setup **trouble-free!**
+Tool collect all googlevideo.com domains and add it to Pi-hole steup. Add these domains to your Pi-Hole setup by running a script or manually and make your setup **trouble-free!**
                 
-Want to report a new domain? Want to report an existing one? Feel free to file an <a href="https://github.com/Soundium/Pi_hole_Whitelist/issues">issue</a>.
-       
-* * *
-         
-### Main features:
-       
-- The entire repo is curated.
-- New domains are added frequently.
-- Supports Pi-Hole Docker installation.
-- Comes with a shell script i.e. you can add all domains automatically at an instant.
-- Domains are categorised and are included in 3 different files.
-- If you are a beginner to Pi-Hole, adding these sites resolves many problems. 
-       
-***
-     
-### Description
-[whitelist.txt](https://raw.githubusercontent.com/Soundium/Pi_hole_Whitelist/master/domains/whitelist.txt) -- This file contains domains that are **safe** to whitelist, i.e. it does not include any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites, and so on. If you want to report additional domain, feel free to file an [issue](https://github.com/Soundium/Pi_hole_Whitelist/issues). 
-             
-***
+Want to report any issue? Feel free to file an <a href="https://github.com/Soundium/Pi_hole_youtube_blocklist/issues">issue</a>.
            
 ### Installation and Usage
-        
- ***For Docker installation***           
- Access you running Pi-Hole container by `docker exec -it <container-ID> bash` and proceed with the steps given below:
+            
 ```
-git clone https://github.com/Soundium/Pi_hole_Whitelist.git
-cd Pi_hole_Whitelist/scripts
-./whitelist.sh
-```
-If you keep the `/etc/pihole` on a volume outside the container you need to change `PIHOLE_LOCATION`and `GRAVITY_UPDATE_COMMAND` variables based on your setup.
-         
-***For whitelist.txt***     
-```
-git clone https://github.com/Soundium/Pi_hole_Whitelist.git
-cd whitelist/scripts
+git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
+cd Pi_hole_youtube_blocklist/scripts
 sudo ./whitelist.sh
 ```
 **Note: You don't have to clone the repo every time you need to update whitelist file. Navigate to `Pi_hole_Whitelist/scripts` and run it again `sudo ./whitelist.sh`**
