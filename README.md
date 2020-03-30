@@ -14,7 +14,12 @@ git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
 cd Pi_hole_youtube_blocklist/scripts
 ```
 3. Add your APPID in temp.sh
-3. 
+```
+sudo nano /etc/pihole/temp.sh
+```
+CTRL + X then Y and Enter
+
+4. Prepare 
             
 ```
 git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
