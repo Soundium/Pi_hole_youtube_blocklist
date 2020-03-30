@@ -7,7 +7,14 @@ Want to report any issue? Feel free to file an <a href="https://github.com/Sound
            
 ### Installation and Usage
 
-Register on <a href="https://www.wolframalpha.com/">Wolframalpha</a>.
+1. Register on <a href="https://www.wolframalpha.com/">Wolframalpha</a> and get your APPID. 
+2. Download scripts.
+```
+git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
+cd Pi_hole_youtube_blocklist/scripts
+```
+3. Add your APPID in temp.sh
+3. 
             
 ```
 git clone https://github.com/Soundium/Pi_hole_youtube_blocklist.git
