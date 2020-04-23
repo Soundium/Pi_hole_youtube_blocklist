@@ -19,7 +19,7 @@ curl 'https://api.hackertarget.com/hostsearch/?q=googlevideo.com' \
 
 # Replace r*.sn*.googlevideo.com URLs to r*---sn-*.googlevideo.com
 # and add those to the list too
-curl "http://api.wolframalpha.com/v2/query?input=googlevideo.com&appid=${APPID}&format=plaintext&podtimeout=${POD_TIMEOUT}&podstate=WebSiteStatisticsPod:InternetData__Subdomains&podstate=WebSiteStatisticsPod:InternetData__Subdomains_More” \
+curl 'http://api.wolframalpha.com/v2/query?input=googlevideo.com&appid=${APPID}&format=plaintext&podtimeout=${POD_TIMEOUT}&podstate=WebSiteStatisticsPod:InternetData__Subdomains&podstate=WebSiteStatisticsPod:InternetData__Subdomains_More' \
 | grep -Po "r\d+---sn-.+.googlevideo.com" >> $FILE
 
 # Scan log file for previously accessed domains
